@@ -1,0 +1,55 @@
+body{
+   margin: 5%;
+}
+
+header {
+   margin: 0;
+   text-align: center;
+   margin-bottom: 1em;
+   border-bottom: 1px solid;
+}
+
+h1, h2 {
+   margin: 0;
+   color: #1d13a3;
+}
+
+#contact {
+   width: 100%;
+}
+
+dt{
+   margin: 0;
+   float: left;
+}
+
+dd{
+   margin: 0;
+   text-align: right;
+}
+
+h3{
+   color: #1d13a3;
+   clear: both;
+}
+
+.credits{
+   width: 100%;
+}
+
+table{
+   border-collapse: collapse;
+}
+
+th{
+   font-weight: 400;
+}
+
+thead{
+   border-bottom: 1px solid;
+}
+
+tr{
+   border-bottom: 1px dotted gray;
+}
+
