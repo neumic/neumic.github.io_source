@@ -74,13 +74,13 @@ h2{
 }
 
 h3{
+   clear: both;
    font-family: 'Open Sans', sans-serif;
    font-weight: 400;
 }
 
 body{
-   margin: 5%;
-   background: #F5F3F3;
+   background: #F0F0F0;
    font-size: 16pt;
    font-weight: 400;
    font-family: 'Abel', sans-serif;
@@ -93,13 +93,29 @@ header{
    border-bottom: 1px solid;
 }
 
+hr{
+   width: 100%;
+   clear: both;
+}
+
+#container {
+   background: #F8F5F5;
+   max-width: 50em;
+   padding: 5%;
+   margin-left: auto;
+   margin-right: auto;
+   border-left: 1px dotted #AAA;
+   border-right: 1px dotted #AAA;
+}
+
 #contact {
    width: 100%;
 }
 
 #contact dt{
-   margin: 0;
+   kargin: 0;
    float: left;
+   clear: left;
 }
 
 #contact dd{
@@ -111,19 +127,19 @@ header{
    width: 100%;
 }
 
-table{
+.credits table{
    border-collapse: collapse;
 }
 
-th{
+.credits th{
    font-weight: 400;
 }
 
-thead{
+.credits thead{
    border-bottom: 1px solid;
 }
 
-tr{
+.credits tr{
    border-bottom: 1px dotted gray;
 }
 
@@ -131,8 +147,28 @@ tr{
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-   
+@media only screen and (min-width: 55em) {
+   header {
+      text-align: right;
+      width: 60%;
+      float: right;
+      border: none;
+      clear: right;
+   }
+
+   h1{
+   }
+
+   h2{
+   }
+
+   #contact{
+      margin: 0;
+      width: 35%;
+      padding: 1%;
+   }
+
+      
 }
 
 @media print,

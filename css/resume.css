@@ -37,19 +37,19 @@ h3{
    width: 100%;
 }
 
-table{
+.credits table{
    border-collapse: collapse;
 }
 
-th{
+.credits th{
    font-weight: 400;
 }
 
-thead{
+.credits thead{
    border-bottom: 1px solid;
 }
 
-tr{
+.credits tr{
    border-bottom: 1px dotted gray;
 }
 
