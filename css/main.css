@@ -67,27 +67,47 @@ h1{
 }
 
 h2{
-   font-family: 'Open Sans', sans-serif;
+   font-family: 'Abel', sans-serif;
    font-weight: 400;
    font-size: 16pt;
    margin: 0;
 }
 
 h3{
-   clear: both;
    font-family: 'Open Sans', sans-serif;
    font-weight: 400;
-   margin-left: 3%;
-   border-left: 0.25em solid #DDE;
-   padding-left: 2%;
+
+   float: left;
+   clear: left;
+
+   margin: 0;
+   width: 30%;
+   text-align: right;
+   border-right: 5px solid #DDE;
+   padding-right: 2%;
    padding-top: 0.25em;
    padding-bottom: 0.25em;
 }
 
-p, table{ 
-   margin-left: 10%;
-   margin-right: 5%;
-   width:   85%;
+section{
+   width: 100%;
+   float: left;
+   clear: left;
+   text-align: left;
+   margin-bottom: 1em;
+}
+
+table{
+   margin-top: 0;
+   margin-bottom: 1em;
+   margin-left: 34%;
+   width: 66%;
+}
+
+p{ 
+   margin-top: 0;
+   margin-bottom: 1em;
+   margin-left: 34%;
 }
 
 body{
@@ -99,7 +119,6 @@ body{
 header{
    margin: 0;
    text-align: center;
-   margin-bottom: 1em;
    border-bottom: 1px solid;
 }
 
@@ -108,10 +127,14 @@ hr{
 }
 
 #container {
+   float: right;
    background: #F8F5F5;
    max-width: 50em;
-   padding: 5%;
-   padding-top: 0;
+   padding-top: 2%;
+   padding-left: 2%;
+   padding-right: 10%;
+   padding-bottom: 2%;
+
    margin-left: auto;
    margin-right: auto;
    border-left: 1px dotted #AAA;
@@ -123,9 +146,8 @@ hr{
 }
 
 #contact dt{
-   margin: 0;
    float: left;
-   clear: left;
+   margin: 0;
 }
 
 #contact dd{
@@ -158,25 +180,31 @@ hr{
 
 @media only screen and (min-width: 55em) {
    header {
-      text-align: right;
-      width: 45%;
       border: none;
-      display: table-cell;
+      width: 62.5%;
+      text-align: right;
+      float: left;
+      margin-bottom: 1em;
+      border-right: 5px solid #DDE;
+      padding-right: 2%;
+   }
+
+   h1{
+      width: 100%;
+      display: inline-block;
+   }
+
+   h2{
+      width: %;
    }
 
    #contact{
-      display: table-cell;
-      vertical-align: bottom;
       margin: 0;
-      max-width: 35%;
-      padding-left: 10%;
+      width: 30%;
+      float: right;
+      clear: right;
    }
 
-   #header-wrapper{
-      height: 5%;
-      display: table;
-   }
-      
 }
 
 @media only screen and (min-width: 35em) {
