@@ -150,24 +150,23 @@ hr{
 @media only screen and (min-width: 55em) {
    header {
       text-align: right;
-      width: 60%;
-      float: right;
+      width: 45%;
       border: none;
-      clear: right;
-   }
-
-   h1{
-   }
-
-   h2{
+      display: table-cell;
    }
 
    #contact{
+      display: table-cell;
+      vertical-align: bottom;
       margin: 0;
-      width: 35%;
-      padding: 1%;
+      max-width: 35%;
+      padding-left: 10%;
    }
 
+   #header-wrapper{
+      height: 5%;
+      display: table;
+   }
       
 }
 
