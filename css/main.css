@@ -64,18 +64,27 @@ h1{
    font-weight: 400;
    font-size: 36pt;
    margin: 0;
+   border-top: 1px solid #DDE;
+   color: #534462;
 }
 
 h2{
-   font-family: 'Abel', sans-serif;
+   font-family: 'Open Sans', sans-serif;
    font-weight: 400;
    font-size: 16pt;
    margin: 0;
+   padding: 0.25em;
+   //background: #534462;
+   //color: #F0F0F0;
+   color: #534462;
 }
 
 h3{
    font-family: 'Open Sans', sans-serif;
    font-weight: 400;
+
+   //background: #EEF;
+   color: #534462;
 
    float: left;
    clear: left;
@@ -91,23 +100,23 @@ h3{
 
 section{
    width: 100%;
-   float: left;
-   clear: left;
+   clear: both;
    text-align: left;
-   margin-bottom: 1em;
+   margin-bottom: 2em;
 }
 
 table{
    margin-top: 0;
    margin-bottom: 1em;
    margin-left: 34%;
-   width: 66%;
+   width: 61%;
 }
 
 p{ 
    margin-top: 0;
    margin-bottom: 1em;
    margin-left: 34%;
+   width: 61%;
 }
 
 body{
@@ -127,12 +136,11 @@ hr{
 }
 
 #container {
-   float: right;
    background: #F8F5F5;
    max-width: 50em;
    padding-top: 2%;
-   padding-left: 2%;
-   padding-right: 10%;
+   padding-left: 0%;
+   padding-right: 0%;
    padding-bottom: 2%;
 
    margin-left: auto;
@@ -142,7 +150,9 @@ hr{
 }
 
 #contact {
-   width: 100%;
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 #contact dt{
@@ -186,23 +196,27 @@ hr{
       float: left;
       margin-bottom: 1em;
       border-right: 5px solid #DDE;
-      padding-right: 2%;
    }
 
    h1{
-      width: 100%;
-      display: inline-block;
+      padding-right: 2%;
    }
 
    h2{
-      width: %;
+      margin-left: 8%;
+      padding-right: 2%;
+   }
+
+   h3{
+      width: 25%;
+      margin-left: 5%;
    }
 
    #contact{
       margin: 0;
-      width: 30%;
-      float: right;
-      clear: right;
+      padding-left: 2%;
+      width: 33%;
+      float: left;
    }
 
 }
