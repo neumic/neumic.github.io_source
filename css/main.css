@@ -61,27 +61,30 @@ textarea {
    ========================================================================== */
 h1{
    font-family: 'Poiret One', cursive;
-   font-weight: 400;
+   font-weight: 600;
    font-size: 36pt;
    margin: 0;
-   border-top: 1px solid #DDE;
+   margin-bottom: -0.25em;
    color: #534462;
 }
 
 h2{
-   font-family: 'Open Sans', sans-serif;
+   font-family: 'Abel', sans-serif;
    font-weight: 400;
    font-size: 16pt;
    margin: 0;
    padding: 0.25em;
+   //border-bottom: 3px double #4A5CB7;
+   //border-bottom: 1px solid #4A5CB7;
    //background: #534462;
    //color: #F0F0F0;
    color: #534462;
 }
 
 h3{
-   font-family: 'Open Sans', sans-serif;
+   font-family: 'Abel', sans-serif;
    font-weight: 400;
+   font-size: 16pt;
 
    //background: #EEF;
    color: #534462;
@@ -89,46 +92,48 @@ h3{
    float: left;
    clear: left;
 
+   border-right: 3px solid #4A5CB7;
+   border-bottom: 1px solid #4A5CB7;
+
    margin: 0;
    width: 30%;
    text-align: right;
-   border-right: 5px solid #DDE;
    padding-right: 2%;
    padding-top: 0.25em;
    padding-bottom: 0.25em;
 }
 
-section{
-   width: 100%;
-   clear: both;
-   text-align: left;
-   margin-bottom: 2em;
+h4{
+   color: #4A5CB7;
+   margin: 0;
 }
 
+h5{
+   margin: 0;
+}
+
+
 table{
-   margin-top: 0;
-   margin-bottom: 1em;
-   margin-left: 34%;
-   width: 61%;
+   width: 100%;
 }
 
 p{ 
+   width: 100%;
    margin-top: 0;
-   margin-bottom: 1em;
-   margin-left: 34%;
-   width: 61%;
 }
 
 body{
-   background: #F0F0F0;
+   //background: #F0F0F0;
+   background: #D0C3DA;
    font-weight: 400;
-   font-family: 'Abel', sans-serif;
+   font-family: 'Open Sans', sans-serif;
 }
 
 header{
-   margin: 0;
-   text-align: center;
-   border-bottom: 1px solid;
+   padding: 1em;
+   width: 26em;
+   text-align: left;
+   border-right: 5px solid #4A5CB7;
 }
 
 hr{
@@ -136,104 +141,125 @@ hr{
 }
 
 #container {
-   background: #F8F5F5;
-   max-width: 50em;
-   padding-top: 2%;
-   padding-left: 0%;
-   padding-right: 0%;
-   padding-bottom: 2%;
+   background: #FAFAFA;
+   max-width: 67em;
+   padding: 0;
 
    margin-left: auto;
    margin-right: auto;
-   border-left: 1px dotted #AAA;
-   border-right: 1px dotted #AAA;
+
+   border-left: 1px solid #4A5CB7;
+   border-right: 1px solid #4A5CB7;
 }
 
 #contact {
-   width: 80%;
-   margin-left: auto;
-   margin-right: auto;
+   text-align:center;
+   margin: 0;
+   padding: 0.5em;
+   border-bottom: 3px double #4A5CB7;
+   border-top: 1px solid #4A5CB7;
 }
 
 #contact dt{
-   float: left;
+   display: none;
    margin: 0;
 }
 
 #contact dd{
-   margin: 0;
+   display: inline;
    text-align: right;
+   margin: 0 1em;
 }
 
 .credits{
-}
-
-.credits table{
    border-collapse: collapse;
+   border-bottom: 1px solid;
+   margin-bottom: 1em;
 }
 
 .credits th{
-   font-weight: 400;
+   color: #4A5CB7;
+   border-bottom: 1px solid #000;
 }
 
 .credits thead{
-   border-bottom: 1px solid;
+   //border-bottom: 1px solid;
 }
 
 .credits tr{
-   border-bottom: 1px dotted gray;
+   //border-bottom: 1px dotted gray;
+}
+
+.top-level{
+   width: 100%;
+   clear: both;
+   text-align: left;
+   padding-top: 1em;
+   padding-bottom: 1em;
+}
+
+.section-contents{
+ //  border-top: 1px solid #4A5CB7;
+   margin-left: 32%;
+   padding-left: 2%;
+   width: 60%;
+   margin-bottom: 1em;
 }
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 55em) {
+@media only screen and (min-width: 50em) {
    header {
       border: none;
+      padding: 0;
+      margin: 1.5em 0;
       width: 62.5%;
-      text-align: right;
+      text-align: left;
       float: left;
-      margin-bottom: 1em;
-      border-right: 5px solid #DDE;
+      border-right: 5px solid #4A5CB7;
    }
 
    h1{
-      padding-right: 2%;
+      margin-left: 4%;
+      padding-left: 2%;
    }
 
    h2{
-      margin-left: 8%;
-      padding-right: 2%;
+      margin-left: 4%;
+      padding-left: 2%;
+      border-bottom: 3px double #4A5CB7;
    }
 
    h3{
-      width: 25%;
-      margin-left: 5%;
+      width: 20%;
+      margin-left: 10%;
    }
 
    #contact{
-      margin: 0;
-      padding-left: 2%;
-      width: 33%;
+      margin: 1.5em 0;
+      padding: 2%;
+      width: 32.5%;
       float: left;
+      border-top: 1px solid #4A5CB7;
+      border-bottom: none;
+   }
+
+   #contact dt{
+      display: block;
+      float: left;
+      margin: 0;
+   }
+
+   #contact dd{
+      display: block;
+      margin: 0;
+      text-align: right;
    }
 
 }
 
-@media only screen and (min-width: 35em) {
-   body{
-      font-size: 16pt;
-   }
-
-   h1{
-      font-size: 48pt;
-   }
-
-   h2{
-      font-size: 18pt;
-   }
-   
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
