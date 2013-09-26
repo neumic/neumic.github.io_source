@@ -60,7 +60,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 h1{
-   font-family: 'Poiret One', cursive;
+   font-family: 'Poiret One', sans-serif;
    font-weight: 600;
    font-size: 2em;
    margin: 0;
@@ -75,10 +75,6 @@ h2{
    font-size: 1.25em;
    margin: 0;
    padding: 0.25em;
-   //border-bottom: 3px double #4A5CB7;
-   //border-bottom: 1px solid #4A5CB7;
-   //background: #534462;
-   //color: #F0F0F0;
    color: #534462;
 }
 
@@ -149,23 +145,6 @@ hr{
    border-right: 1px solid #4A5CB7;
 }
 
-#contact {
-   background: #EEF;
-   margin: 0 1em;
-   padding: 0.5em 5%;
-   border-bottom: 1px solid #ccd;
-}
-
-#contact dt{
-   margin: 0;
-   float: left;
-   clear: left;
-}
-
-#contact dd{
-   text-align: right;
-   margin: 0;
-}
 
 #pretentious-c{
    font-size: 75%;
@@ -175,55 +154,6 @@ hr{
    top: -0.5em;
 }
 
-.credits{
-   border-collapse: collapse;
-   margin-bottom: 1em;
-}
-
-.credits th{
-   color: #4A5CB7;
-   border-bottom: 1px solid #000;
-   display: none;
-}
-
-.credits tr{
-   display: block;
-}
-
-.credits tbody tr:nth-child(even){
-   background: #EEF;
- }
-
-.credits tbody td:first-child{
-}
-
-.credits tbody td:first-child:before{
-   font-weight: 600;
-   content: "Show: ";
-}
-
-.credits tbody td:first-child + td:before{
-   font-weight: 600;
-   content: "Venue: ";
-}
-
-.credits tbody td:first-child + td + td:before{
-   font-weight: 600;
-   content: "Director: ";
-}
-
-.credits tbody td:first-child + td + td + td:before{
-   font-weight: 600;
-   content: "Role: ";
-}
-
-.credits td{
-   display: block;
-   font-size: 0.9em;
-   padding: 0.3em;
-   widows: 2;
-   orphans: 2;
-}
 
 .top-level{
    width: 100%;
@@ -250,28 +180,6 @@ hr{
    ========================================================================== */
 
 @media only screen and (min-width: 50em) {
-   header {
-      border: none;
-      padding: 0;
-      margin: 1.5em 0;
-      width: 62.5%;
-      text-align: right;
-      float: left;
-      border-right: 5px solid #4A5CB7;
-   }
-
-   h1{
-      font-size: 3em;
-      margin-left: 4%;
-      padding-right: 2%;
-   }
-
-   h2{
-      font-size: 1.85em;
-      margin-left: 4%;
-      padding-right: 2%;
-      border-bottom: 3px double #4A5CB7;
-   }
 
    h3{
       font-size: 1.33em;
@@ -293,27 +201,6 @@ hr{
    }
 
 
-   #contact{
-      background: none;
-      margin: 1.5em 0;
-      padding: 2%;
-      width: 32.5%;
-      float: left;
-      border-top: 1px solid #4A5CB7;
-      border-bottom: none;
-   }
-
-   #contact dt{
-      display: block;
-      float: left;
-      margin: 0;
-   }
-
-   #contact dd{
-      display: block;
-      margin: 0;
-      text-align: right;
-   }
 
    .section-contents{
     //  border-top: 1px solid #4A5CB7;
@@ -333,52 +220,6 @@ hr{
       font-size: 1.85em;
    }
 
-   .credits{
-      display: table;
-      border-collapse: collapse;
-      margin-bottom: 1em;
-   }
-
-   .credits th{
-      display: table-cell;
-      color: #4A5CB7;
-      border-bottom: 1px solid #000;
-   }
-
-   .credits tbody tr:nth-child(even){
-      background: #EEF;
-    }
-
-   .credits tr{
-      display: table-row;
-   }
-
-   .credits td{
-      display: table-cell;
-      font-size: 0.9em;
-      padding: 0.3em;
-      widows: 2;
-      orphans: 2;
-   }
-
-   .credits tbody td:first-child:before{
-      content: "";
-   }
-
-   .credits tbody td:first-child + td:before{
-      content: "";
-   }
-
-   .credits tbody td:first-child + td + td:before{
-      font-weight: 600;
-      content: "";
-   }
-
-   .credits tbody td:first-child + td + td + td:before{
-      font-weight: 600;
-      content: "";
-   }
-   
 }
 
 @media print,
