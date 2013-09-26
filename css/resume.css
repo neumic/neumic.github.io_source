@@ -1,3 +1,7 @@
+hr {
+   display: none;
+}
+
 #contact {
    background: #EEF;
    margin: 0 1em;
@@ -67,6 +71,10 @@
 }
 
 @media only screen and (min-width: 50em) {
+   hr {
+      display: block;
+   }
+
    header {
       border: none;
       padding: 0;
@@ -74,7 +82,7 @@
       width: 62.5%;
       text-align: right;
       float: left;
-      border-right: 5px solid #4A5CB7;
+      border-right: 3px dotted #4A5CB7;
    }
 
    h1{
@@ -87,7 +95,7 @@
       font-size: 1.85em;
       margin-left: 4%;
       padding-right: 2%;
-      border-bottom: 3px double #4A5CB7;
+      //border-bottom: 3px double #4A5CB7;
    }
 
    #contact{
@@ -96,7 +104,7 @@
       padding: 2%;
       width: 32.5%;
       float: left;
-      border-top: 1px solid #4A5CB7;
+      //border-top: 1px solid #4A5CB7;
       border-bottom: none;
    }
 
@@ -113,7 +121,7 @@
    }
 }
 
-@media only screen and (min-width: 25em) {
+@media only screen and (min-width: 35em) {
    .credits{
       display: table;
       border-collapse: collapse;
