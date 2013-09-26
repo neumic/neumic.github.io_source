@@ -1,0 +1,32 @@
+---
+layout: default
+navs: [ [Resume, /resume.html], [Blug, /blug], [Photos, /photos] ]
+---
+<div id="container">
+   <header>
+      <h1>
+      Nick M<span id="pretentious-c">c</span>Larnan
+      </h1>
+      <h2>
+      Some Semblance of Web Presence
+      </h2>
+   </header>
+   <nav>
+      <ul>
+         {% for nav in page.navs %}
+            <li>
+               {% if nav[1] != page.id %}
+                  <a href="{{ nav[1] }}">{{nav[0]}}</a>
+               {% else %}
+                  {{ nav[0] }}
+               {% endif %}
+            </li>
+         {% endfor %}
+      </ul>
+   </nav>
+
+   {{ content }}
+
+   <footer>
+   </footer>
+</div>
