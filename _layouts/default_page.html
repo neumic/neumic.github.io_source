@@ -1,6 +1,6 @@
 ---
 layout: default
-navs: [ [Resume, /resume.html], [Blug, /blug], [Photos, /photos] ]
+navs: [ [Home, /index.html], [Resume, /resume.html], [Blug, /blug], [Photos, /photos] ]
 ---
 <div id="container">
    <header>
@@ -14,18 +14,14 @@ navs: [ [Resume, /resume.html], [Blug, /blug], [Photos, /photos] ]
    <nav>
       <ul>
          {% for nav in page.navs %}
-            <li>
-               {% if nav[1] != page.id %}
-                  <a href="{{ nav[1] }}">{{nav[0]}}</a>
-               {% else %}
-                  {{ nav[0] }}
-               {% endif %}
-            </li>
+            <li><a  {% if nav[1] == page.url %}class="here"{% endif %} href="{{ nav[1] }}">{{nav[0]}}</a> </li>
          {% endfor %}
       </ul>
    </nav>
 
+   <article>
    {{ content }}
+   </article>
 
    <footer>
    </footer>

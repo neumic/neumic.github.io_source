@@ -59,7 +59,13 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-h1{
+
+html, body{
+   height: 100%;
+}
+
+
+header h1{
    font-family: 'Poiret One', sans-serif;
    font-weight: 600;
    font-size: 2em;
@@ -135,16 +141,47 @@ hr{
    clear: both;
 }
 
+nav li a {
+   font-family: 'Abel', sans-serif;
+   font-weight: 600;
+   font-size: 1em;
+   text-decoration: none;
+
+   color: #534462;
+}
+
+.here {
+   text-decoration: underline;
+}
+
+article {
+   margin: 3em 12%;
+   width: 50em;
+}
+
+article h1{
+   font-family: 'Poiret One', sans-serif;
+}
+
+article p{
+   margin-left: 2%;
+}
+   
+
+
 #container {
    background: #FAFAFA;
    max-width: 67em;
    padding: 0;
+   padding-top: 2em;
 
    margin-left: auto;
    margin-right: auto;
 
+
    border-left: 1px solid #4A5CB7;
    border-right: 1px solid #4A5CB7;
+   min-height: 100%;
 }
 
 
@@ -183,6 +220,19 @@ hr{
    ========================================================================== */
 
 @media only screen and (min-width: 50em) {
+   header{
+      text-align: right;
+      width: 45.5%;
+      padding: 0 2%;
+      border-right: 3px dotted #4A5CB7;
+      float: left;
+      clear: left;
+   }
+
+   h2{
+      padding: 0;
+      padding-bottom: 0.25em;
+   }
 
    h3{
       font-size: 1.33em;
@@ -204,28 +254,42 @@ hr{
       padding-bottom: 0;
    }
 
+   nav{
+      margin-top: 1.8em;
+   }
 
+
+   nav li{
+      display: inline;
+      font-size: 1.33em;
+      text-align: right;
+
+      border-right: 3px dotted #4A5CB7;
+      margin: 0;
+      padding: 0 2%;
+   }
 
    .section-contents{
     //  border-top: 1px solid #4A5CB7;
       border-left: 3px dotted #4A5CB7;
-      margin-left: 32%;
+      margin-left: 31.5%;
       padding-left: 2%;
-      width: 60%;
+      width: 62.5%;
       margin-bottom: 0em;
    }
 }
 
 @media only screen and (min-width: 25em) {
-   h1{
+   header h1{
       font-size: 3em;
    }
 
    h2{
-      font-size: 1.85em;
+      font-size: 1.6em;
    }
 
 }
+
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),

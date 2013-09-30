@@ -20,6 +20,10 @@ hr {
    margin: 0;
 }
 
+#container{
+   padding: 0;
+}
+
 .credits{
    border-collapse: collapse;
    margin-bottom: 1em;
@@ -70,6 +74,7 @@ hr {
    orphans: 2;
 }
 
+
 @media only screen and (min-width: 50em) {
    hr {
       display: block;
@@ -101,8 +106,10 @@ hr {
    #contact{
       background: none;
       margin: 1.5em 0;
-      padding: 2%;
-      width: 32.5%;
+      padding: 1.5em 2%;
+      padding-right: 0;
+      //padding: 2%;
+      width: 31.5%;
       float: left;
       //border-top: 1px solid #4A5CB7;
       border-bottom: none;
@@ -167,4 +174,146 @@ hr {
       font-weight: 600;
       content: "";
    }
+}
    
+@media only screen and (min-width: 25em) {
+   h1{
+      font-size: 3em;
+   }
+
+   h2{
+      font-size: 1.85em;
+   }
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+   header{
+      text-align: right;
+      width: 45.5%;
+      padding: 0 2%;
+      border-right: 3px dotted #4A5CB7;
+      float: left;
+      clear: left;
+   }
+
+   h2{
+      padding: 0;
+      padding-bottom: 0.25em;
+   }
+
+   h3{
+      font-size: 1.33em;
+      text-align: right;
+
+      float: left;
+      clear: left;
+
+      border: none;
+      //border-right: 3px dotted #4A5CB7;
+      //border-bottom: 1px solid #4A5CB7;
+
+      width: 20%;
+      margin: 0;
+      margin-left: 10%;
+      padding-left: 0;
+      padding-right: 2%;
+      padding-top: 0;
+      padding-bottom: 0;
+   }
+
+   nav{
+      display:none;
+   }
+
+   .section-contents{
+      border-left: 3px dotted #4A5CB7;
+      margin-left: 31.5%;
+      padding-left: 2%;
+      width: 62.5%;
+      margin-bottom: 0em;
+   }
+
+   .credits{
+      display: table;
+      border-collapse: collapse;
+      margin-bottom: 1em;
+   }
+
+   .credits th{
+      display: table-cell;
+      color: #4A5CB7;
+      border-bottom: 1px solid #000;
+   }
+
+   .credits tbody tr:nth-child(even){
+      background: #EEF;
+    }
+
+   .credits tr{
+      display: table-row;
+   }
+
+   .credits td{
+      display: table-cell;
+      font-size: 0.9em;
+      padding: 0.3em;
+      widows: 2;
+      orphans: 2;
+   }
+
+   .credits tbody td:first-child:before{
+      content: "";
+   }
+
+   .credits tbody td:first-child + td:before{
+      content: "";
+   }
+
+   .credits tbody td:first-child + td + td:before{
+      font-weight: 600;
+      content: "";
+   }
+
+   .credits tbody td:first-child + td + td + td:before{
+      font-weight: 600;
+      content: "";
+   }
+
+   hr {
+      display: block;
+   }
+
+   #contact{
+      background: none;
+      margin: 0;
+      padding: 1em 2%;
+      padding-right: 0;
+      //padding: 2%;
+      width: 31.5%;
+      //border-top: 1px solid #4A5CB7;
+      border-bottom: none;
+      display: inline-block;
+   }
+
+   #contact dt{
+      display: block;
+      float: left;
+      margin: 0;
+   }
+
+   #contact dd{
+      display: block;
+      margin: 0;
+      text-align: right;
+   }
+   
+   #container{
+      border: none;
+   }
+}
+
