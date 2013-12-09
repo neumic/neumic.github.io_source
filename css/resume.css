@@ -24,6 +24,18 @@ hr {
    padding: 0;
 }
 
+.job-organization{
+   display: inline;
+}
+
+.job-dates{
+   display: inline;
+}
+
+.job-duties{
+   list-style-type: circle;
+}
+
 .credits{
    border-collapse: collapse;
    margin-bottom: 1em;
