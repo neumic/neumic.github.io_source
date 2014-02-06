@@ -65,14 +65,14 @@ html, body{
 }
 
 
-header h1{
+h1{
    font-family: 'Poiret One', sans-serif;
-   font-weight: 600;
-   font-size: 2em;
+   font-weight: 400;
+   font-size: 3em;
    margin: 0;
    margin-bottom: -0.25em;
    color: #534462;
-   text-shadow: 0 2px 0 #dde;
+   /*text-shadow: 0 2px 0 #dde;*/
 }
 
 h2{
@@ -172,8 +172,8 @@ article p{
 #container {
    background: #FAFAFA;
    max-width: 67em;
-   padding: 0;
    padding-top: 2em;
+   padding-bottom: 5em;
 
    margin-left: auto;
    margin-right: auto;
@@ -182,6 +182,8 @@ article p{
    border-left: 1px solid #4A5CB7;
    border-right: 1px solid #4A5CB7;
    min-height: 100%;
+
+   box-shadow: 0 0 5em -3em #4A5CB7;
 }
 
 
@@ -227,6 +229,10 @@ article p{
       border-right: 3px dotted #4A5CB7;
       float: left;
       clear: left;
+   }
+
+   h1{
+      font-size: 4em;
    }
 
    h2{
@@ -280,13 +286,14 @@ article p{
 }
 
 @media only screen and (min-width: 25em) {
-   header h1{
+   h1{
       font-size: 3em;
    }
 
    h2{
       font-size: 1.6em;
    }
+
 
 }
 
