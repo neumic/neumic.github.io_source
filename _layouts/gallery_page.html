@@ -1,30 +1,15 @@
 ---
-layout: page
+layout: default_page
 ---
-<style TYPE="text/css">
-.gallery-image-wrapper {
-  height: 300px;
-  width: 300px;
-  display: inline-block;
-  margin: 1em;
-  position: relative;
-  text-align: center;
-}
-.gallery-image {
-  margin: auto;
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  max-height: 100%;
-  max-width: 100%;
-}
-</style>
-<h1><a href="/{{ site.gallery.dir }}">{{ page.title }}</a></h1>
+<script src="/js/lightbox/jquery-1.10.2.min.js"></script>
+<script src="/js/lightbox/lightbox-2.6.min.js"></script>
+<link href="/css/lightbox/lightbox.css" rel="stylesheet" />
+
+<h3>{{ page.title }}</h3>
 <hr />
 {% for image in page.images %}
     <div class="gallery-image-wrapper">
-        <a name="{{ image }}"></a>
-        <a href="{{ image }}"{% if site.gallery.lightbox %} rel="lightbox[{{ page.gallery }}]"{% endif %}>
+        <a href="{{ image }}" data-lightbox="{{ page.gallery }}">
             <img class="gallery-image" src="thumbs/{{ image }}" />
         </a>
     </div>
