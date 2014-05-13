@@ -53,6 +53,10 @@ hr {
    display: inline;
 }
 
+.job-dates:before{
+   content: " ― "
+}
+
 .job-duties{
    list-style-type: circle;
 }
@@ -247,7 +251,6 @@ hr {
        (min-resolution: 120dpi) {
 
    body{
-      font-size: 0.8em;
    }
 
    header{
