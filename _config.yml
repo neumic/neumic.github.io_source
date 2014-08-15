@@ -1,6 +1,6 @@
 name: Nick McLarnan
 markdown: kramdown
-pygments: true
+highlighter: pygments
 
 gallery:
   # path to the gallery
